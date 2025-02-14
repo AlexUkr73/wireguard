@@ -2,6 +2,7 @@ services:
 
   wireguard:
     image: denisix/wireguard
+    privileged: true
     environment:
       - NAT=1
       - INTERFACE=eth0
