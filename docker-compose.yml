@@ -3,6 +3,8 @@ services:
   wireguard:
     image: denisix/wireguard
     privileged: true
+    devices:
+      - /sys/class/net/wg0
     environment:
       - NAT=1
       - INTERFACE=eth0
