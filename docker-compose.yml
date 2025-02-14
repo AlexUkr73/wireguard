@@ -8,7 +8,7 @@ services:
       - NAT=1
       - INTERFACE=eth0
       - PORT=55555
-      - PUBLIC_IP=0.0.0.0
+      - PUBLIC_IP=1.2.3.4
       - DNS=8.8.8.8,8.8.4.4
       - SUBNET_IP=10.88.0.1/16
       - CLIENTCONTROL_NO_LOGS=0
