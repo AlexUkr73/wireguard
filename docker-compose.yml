@@ -2,7 +2,6 @@ services:
 
   wireguard:
     image: denisix/wireguard
-    privileged: true
     devices:
       - /sys/class/net/wg0
     environment:
@@ -20,5 +19,7 @@ services:
       - 55555:55555/udp
     cap_add:
       - SYS_MODULE
-      - NET_ADMIN
+    sysctl:
+      - "net.ipv4.conf.all.src_valid_mark=1"
+    privileged: true
     restart: unless-stopped
