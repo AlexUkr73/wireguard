@@ -16,7 +16,7 @@ LABEL description="Wireguard VPN" org.opencontainers.image.authors="github.com/d
 ENV \
   NAT=1 \
   INTERFACE=eth0 \
-  PORT=55555 \
+  PORT=10000 \
   PUBLIC_IP=1.2.3.4 \
   DNS=8.8.8.8,8.8.4.4 \
   SUBNET_IP=10.88.0.1/16 \
