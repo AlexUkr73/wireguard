@@ -18,6 +18,7 @@ services:
     ports:
       - 10000:10000/udp
     cap_add:
+      - SYS_ADMIN
       - NET_ADMIN
       - SYS_MODULE
     sysctl:
