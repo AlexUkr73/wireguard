@@ -80,7 +80,7 @@ wg_down() {
     done
 }
 
-sudo wg_up
+wg_up
 
 if [ "$NAT" -eq 1 ]
 then
