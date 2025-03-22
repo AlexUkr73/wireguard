@@ -2,8 +2,6 @@ services:
 
   wireguard:
     image: denisix/wireguard
-    devices:
-      - /sys/class/net/wg0
     environment:
       - NAT=1
       - INTERFACE=eth0
@@ -20,6 +18,7 @@ services:
     cap_add:
       - SYS_ADMIN
       - NET_ADMIN
+      - SYS_MODULE
     sysctl:
       - "net.ipv4.conf.all.src_valid_mark=1"
     privileged: true
