@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+modprobe wireguard
+
 # Get public IP
 if [ "$PUBLIC_IP" = "1.2.3.4" ]
 then
