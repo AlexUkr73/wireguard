@@ -20,7 +20,6 @@ services:
     cap_add:
       - SYS_ADMIN
       - NET_ADMIN
-      - SYS_MODULE
     sysctl:
       - "net.ipv4.conf.all.src_valid_mark=1"
     privileged: true
