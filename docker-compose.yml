@@ -16,7 +16,7 @@ services:
     volumes:
       - ./wireguard/:/etc/wireguard/
     ports:
-      - 1000:1000/udp
+      - 10000:10000/udp
     cap_add:
       - SYS_MODULE
     sysctl:
