@@ -5,10 +5,7 @@ if [ "$PUBLIC_IP" = "1.2.3.4" ]
 then
     PUBLIC_IP=$(curl -s ifconfig.co)
     export PUBLIC_IP
-    echo "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-    echo $PUBLIC_IP
-    echo `ifconfig`
-    echo `uname -a`
+
 fi
 
 # postup script
