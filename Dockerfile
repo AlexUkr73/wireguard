@@ -39,4 +39,4 @@ RUN chmod 755 /srv/* \
 HEALTHCHECK --interval=5s --timeout=5s CMD /sbin/ip -o li sh wg0 || exit 1
 
 # Entrypoint
-CMD [ "sudo start" ]
+CMD [ "start" ]
