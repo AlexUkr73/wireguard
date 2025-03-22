@@ -7,7 +7,7 @@ services:
     environment:
       - NAT=1
       - INTERFACE=eth0
-      - PORT=55555
+      - PORT=1000
       - PUBLIC_IP=1.2.3.4
       - DNS=8.8.8.8,8.8.4.4
       - SUBNET_IP=10.88.0.1/16
@@ -16,7 +16,7 @@ services:
     volumes:
       - ./wireguard/:/etc/wireguard/
     ports:
-      - 55555:55555/udp
+      - 1000:1000/udp
     cap_add:
       - SYS_MODULE
     sysctl:
